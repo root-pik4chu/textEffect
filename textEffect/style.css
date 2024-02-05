@@ -1,0 +1,88 @@
+
+
+@font-face {
+     font-family: f1;
+     src: url(Gilroy-Regular.ttf);
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+color: rgb(0, 0, 0);
+font-family: f1;
+}
+
+body{
+height: 100%;
+width: 100%;
+}
+/* #main{
+     height: 100%;
+     width: 100%;
+} */
+
+#page1{
+     height: 100vh;
+     width: 100%;
+     background-color: #282828;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     flex-direction: column;
+}
+#flex{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     width: 20%;
+     height: 10vh;
+     /* border: 1px solid white; */
+     /* border-radius: 20px; */
+     /* background-color: #E63946; */
+     position: relative;
+     overflow: hidden;
+     border-bottom: 0.5px solid white;
+
+
+}
+#flex span{
+     /* position: absolute;
+     transform: translate(-50% -50%); */
+     display: flex;
+     font-size: 6vh;
+     color: #A8DADC;
+     /* margin-top: -90%; */
+     display: block;
+     position: relative;
+     overflow: hi;
+     /* translate: 50px 0; */
+     transition: cubic-bezier(0.19, 1, 0.22, 2);
+     
+}
+
+
+#flex:hover span{
+  animation: MoveDown 0.3s forwards, MoveUp 0.2s forwards 0.2s;
+}
+@keyframes MoveDown {
+  to {
+    transform: translate3d(0, 105%, 0);
+  }
+}
+@keyframes MoveUp {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0) ;
+  }
+}
+
+
+
+
+
+
